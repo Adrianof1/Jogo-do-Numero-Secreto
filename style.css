@@ -1,0 +1,196 @@
+/* Este asterisco (*) é um feitiço que pega TUDO na nossa página. */
+* {
+  /* Garante que as caixas se comportem bem quando colocamos bordas. */
+  box-sizing: border-box;
+  /* Tira todas as margens que os navegadores colocam sozinhos. */
+  margin: 0;
+  /* Tira todos os preenchimentos internos. */
+  padding: 0;
+  /* Deixa todas as letras brancas por padrão. */
+  color: white;
+}
+
+/* Aqui, vamos enfeitar o corpo 🤸 da nossa página inteira. */
+body {
+  /* Criamos um fundo degradê bem bonito, que vai do azul claro para o escuro. */
+  background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+  /* O fundo vai ocupar 100% da altura da tela. */
+  height: 100vh;
+  /* Estes três feitiços juntos centralizam a caixa principal do jogo bem no meio da tela. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Este é um feitiço especial que cria uma camada "fantasma" 👻 em cima do fundo. */
+body::before {
+  /* Nesse fantasma, a gente desenha a imagem "code.png". */
+  background-image: url("img/code.png");
+  /* A imagem não vai se repetir. */
+  background-repeat: no-repeat;
+  /* E vai ficar do lado direito da tela. */
+  background-position: right;
+  /* Essas são as palavras mágicas para o fantasma aparecer. */
+  content: "";
+  display: block;
+  position: absolute;
+  /* O fantasma ocupa a tela inteira. */
+  width: 100%;
+  height: 100%;
+  /* E fica um pouco transparente para não atrapalhar. */
+  opacity: 0.4;
+}
+
+/* Agora, vamos arrumar a caixa principal 📦 do nosso jogo. */
+.container {
+  /* Define a largura e altura da caixa. */
+  width: 80%;
+  height: 80%;
+  /* Alinha os itens dentro da caixa. */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Deixa as bordas da caixa arredondadas. */
+  border-radius: 24px;
+  /* Cria uma bordinha azul em volta da caixa. */
+  border: 1px solid #1875E8;
+  /* Adiciona uma sombra suave para dar um efeito 3D. */
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  /* Coloca uma imagem de "ruído" como textura de fundo da caixa. */
+  background-image: url("img/Ruido.png");
+  background-size: 100% 100%;
+  /* Posição relativa para ajudar a organizar as coisas dentro. */
+  position: relative;
+}
+
+/* Arrumando a caixa que segura todo o conteúdo (textos, botões e a imagem). */
+.container__conteudo {
+  display: flex;
+  align-items: center;
+  /* Fica "grudada" na parte de baixo da caixa principal. */
+  position: absolute;
+  bottom: 0;
+}
+
+/* Arrumando a caixa que tem só as informações (textos e botões). */
+.container__informacoes {
+  /* Faz ela crescer e ocupar o espaço disponível. */
+  flex: 1;
+  /* Cria um espaço para respirar entre os textos e a borda da caixa. */
+  padding: 3rem;
+}
+
+/* Enfeitando os botões do nosso jogo. */
+.container__botao {
+  /* Deixa as bordas do botão arredondadas. */
+  border-radius: 16px;
+  /* Pinta o fundo do botão de azul. */
+  background: #1875E8;
+  /* Define o espaço interno do botão (altura e largura). */
+  padding: 16px 24px;
+  width: 100%;
+  /* Aumenta o tamanho da letra. */
+  font-size: 24px;
+  /* Deixa a letra em negrito. */
+  font-weight: 700;
+  /* Tira qualquer borda que o botão possa ter. */
+  border: none;
+  /* Adiciona um espaço em cima do botão. */
+  margin-top: 2rem;
+}
+
+/* Define o espaço em volta da caixa de texto. */
+.container__texto {
+  margin: 16px 0 16px 0;
+}
+
+/* Este feitiço pinta de azul aquele pedacinho de texto especial. */
+.container__texto-azul {
+  color: #1875E8;
+}
+
+/* Arrumando a caixinha de texto onde o jogador digita. */
+.container__input {
+  width: 100%;
+  height: 72px;
+  border-radius: 16px;
+  /* O fundo da caixinha é branco. */
+  background-color: #FFF;
+  border: none;
+  /* A cor do texto que o jogador digita é azul. */
+  color: #1875E8;
+  padding: 2rem;
+  font-size: 24px;
+  font-weight: 700;
+  /* Define o tipo de letra. */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Arrumando a caixa dos dois botões. */
+.container__botoes {
+  display: flex;
+  /* Cria um espaço entre os dois botões. */
+  gap: 2em;
+}
+
+/* Enfeitando o título principal (h1). */
+h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 72px;
+  padding-bottom: 3rem;
+}
+
+/* Definindo o tipo de letra para os parágrafos e botões. */
+p,
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Enfeitando o parágrafo de instrução. */
+.texto__paragrafo {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* Regra especial: quando um botão estiver "travado" (disabled)... */
+button:disabled {
+  /* ... o fundo dele fica cinza. */
+  background-color: gray;
+}
+
+/* === MÁGICA PARA TELAS PEQUENAS 📱 === */
+/* Essas regras só funcionam se a tela for menor que 1250 pixels de largura. */
+@media screen and (max-width: 1250px) {
+
+  /* O título fica menor. */
+  h1 {
+    font-size: 50px;
+  }
+
+  /* A letra do botão fica menor. */
+  .container__botao {
+    font-size: 16px;
+  }
+
+  /* O parágrafo fica menor. */
+  .texto__paragrafo {
+    font-size: 24px;
+  }
+
+  /* A imagem da pessoa some para dar mais espaço! */
+  .container__imagem-pessoa {
+    display: none;
+  }
+
+  /* Mudamos a organização do conteúdo para ele não ficar mais grudado embaixo. */
+  .container__conteudo {
+    display: block;
+    position: inherit;
+  }
+
+  /* Diminuímos o espaço interno para tudo caber melhor. */
+  .container__informacoes {
+    padding: 1rem;
+  }
+}
