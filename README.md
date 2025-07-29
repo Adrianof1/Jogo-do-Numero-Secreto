@@ -1,4 +1,4 @@
-#Visualise o jogo [[AQUI](https://jogo-seven-alpha-43.vercel.app/)]
+# Visualise o jogo [[AQUI](https://jogo-seven-alpha-43.vercel.app/)]
 
 # 🎮 Jogo do Número Secreto
 
