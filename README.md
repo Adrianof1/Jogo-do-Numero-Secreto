@@ -1,4 +1,4 @@
-#Jogo desenvolvido na aula 
+
 
 # 🎮 Jogo do Número Secreto
 
@@ -53,7 +53,7 @@ Este projeto foi construído com as seguintes tecnologias:
 
 ## 👨‍💻 Autor
 
-*(Adriano Ferreira)*
+*Adriano Ferreira*
 
   * **GitHub:** [[GitHub](https://github.com/Adrianof1)]
   * **LinkedIn:** [[LinkedIn](https://www.linkedin.com/in/adriano-ferreira-8b227b11b/)]
