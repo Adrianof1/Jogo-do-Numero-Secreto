@@ -4,7 +4,7 @@
 
 Um divertido jogo de adivinhação onde o seu objetivo é descobrir o número secreto. Desenvolvido com HTML, CSS e JavaScript puro, com um toque especial de feedback por voz\!
 
-*(Você pode substituir esta imagem por um print do seu jogo funcionando\!)*
+**
 
 -----
 
