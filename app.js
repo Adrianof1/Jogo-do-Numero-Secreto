@@ -5,7 +5,7 @@
 let listaDeNumerosSorteados = [];
 
 // Este é o número mais alto que o jogo pode sortear. No nosso caso, é 10.
-let numeroLimite = 10;
+let numeroLimite = 100;
 
 // Esta é a caixinha que guarda o NÚMERO SECRETO que o jogador precisa adivinhar!
 let numeroSecreto = gerarNumeroAleatorio();
