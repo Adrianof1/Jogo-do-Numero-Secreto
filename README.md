@@ -32,7 +32,7 @@ O "Jogo do Número Secreto" é um projeto interativo criado para praticar e demo
 
 1.  Baixe os arquivos do projeto (`index.html`, `style.css`, `app.js` e a pasta `img`).
 2.  Abra o arquivo `index.html` no seu navegador preferido (como Chrome, Firefox, etc.).
-3.  Digite um número de 1 a 10 na caixa de texto.
+3.  Digite um número de 1 a 100 na caixa de texto.
 4.  Clique no botão **"Chutar"**.
 5.  Ouça e siga as dicas na tela para descobrir o número.
 6.  Quando acertar, clique em **"Novo Jogo"** para se divertir novamente\!
